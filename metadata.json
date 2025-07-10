@@ -1,0 +1,5 @@
+{
+  "name": "Event Bot Manager",
+  "description": "A comprehensive dashboard to manage events, users, and payments for a WhatsApp-based event bot, featuring AI-powered tools to streamline content creation.",
+  "requestFramePermissions": []
+}
