@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { View } from '../types';
+import { useNavigate } from 'react-router-dom';
 
 interface SidebarProps {
   currentView: View;
@@ -30,10 +31,11 @@ const NavItem: React.FC<{ icon: React.ReactNode; label: string; isActive: boolea
 );
 
 const Sidebar: React.FC<SidebarProps> = ({ currentView, setView }) => {
+  const navigate = useNavigate();
   const navItems = [
-    { id: View.Dashboard, label: 'Painel', icon: <DashboardIcon /> },
-    { id: View.Events, label: 'Eventos', icon: <EventsIcon /> },
-    { id: View.Payments, label: 'Pagamentos', icon: <PaymentsIcon /> },
+    { id: View.Dashboard, label: 'Painel', icon: <DashboardIcon />, path: '/admin' },
+    { id: View.Events, label: 'Eventos', icon: <EventsIcon />, path: '/admin' },
+    { id: View.Payments, label: 'Pagamentos', icon: <PaymentsIcon />, path: '/admin' },
   ];
 
   return (
@@ -50,7 +52,10 @@ const Sidebar: React.FC<SidebarProps> = ({ currentView, setView }) => {
               label={item.label}
               icon={item.icon}
               isActive={currentView === item.id}
-              onClick={() => setView(item.id)}
+              onClick={() => {
+                setView(item.id);
+                navigate('/admin');
+              }}
             />
           ))}
         </ul>

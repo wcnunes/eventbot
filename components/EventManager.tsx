@@ -54,7 +54,7 @@ const EventCard: React.FC<{ event: Event; onEdit: (event: Event) => void }> = ({
       <div className="flex flex-col gap-2">
         <div className="flex justify-between items-start">
           <h3 className="text-xl font-bold text-text-primary">{event.nome_evento}</h3>
-          <span className="text-xs font-semibold bg-accent text-white px-2 py-1 rounded-full">{event.localizacao}</span>
+            <span className="text-xs font-semibold bg-accent text-white px-2 py-1 rounded-full">{event.localizacao}</span>
         </div>
         <p className="text-sm text-text-secondary">{intervalo}</p>
         <p className="text-text-secondary text-sm mb-4 line-clamp-3 h-16 overflow-hidden">{event.descricao}</p>
@@ -79,15 +79,15 @@ const EventCard: React.FC<{ event: Event; onEdit: (event: Event) => void }> = ({
             <Button type="button" className="flex items-center gap-1 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 text-sm" onClick={handleShareFacebook} style={{ minWidth: 0 }}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18" height="18" fill="currentColor"><path d="M29 0H3C1.343 0 0 1.343 0 3v26c0 1.657 1.343 3 3 3h13V20h-4v-5h4v-3.5C16 8.57 18.014 7 20.5 7c1.104 0 2 .896 2 2v3h3v5h-3v12h5c1.657 0 3-1.343 3-3V3c0-1.657-1.343-3-3-3z"/></svg>
               Facebook
-            </Button>
+          </Button>
             <Button type="button" className="flex items-center gap-1 bg-black hover:bg-gray-800 text-white px-3 py-1 text-sm" onClick={handleShareX} style={{ minWidth: 0 }}>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1227" width="18" height="18" fill="currentColor"><path d="M807 0h374L727 522l473 705H872l-295-434-337 434H0l469-604L13 0h374l263 387zm-51 770l114 168h125l-180-267-59 99zm-486 282h125l163-210-73-108-215 318zm-8-900l184 273 80-120L340 152H262zm324 480l-99-148-70 108 69 104 100-64zm-41-62l41 62 41-62-41-62-41 62zm-41-62l-80-120-184 273h125l139-153zm-263-387l215 318 73-108L340 152H262zm324 480l-99-148-70 108 69 104 100-64zm-41-62l41 62 41-62-41-62-41 62zm-41-62l-80-120-184 273h125l139-153z"/></svg>
               X
-            </Button>
+          </Button>
             <Button type="button" className="flex items-center gap-1 bg-gray-600 hover:bg-gray-700 text-white px-3 py-1 text-sm" onClick={handleCopyLink} style={{ minWidth: 0 }}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="18" height="18" stroke="currentColor"><rect x="9" y="9" width="13" height="13" rx="2" strokeWidth="2"/><rect x="3" y="3" width="13" height="13" rx="2" strokeWidth="2"/></svg>
               Copiar
-            </Button>
+          </Button>
           </div>
         </div>
       </div>

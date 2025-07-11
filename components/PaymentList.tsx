@@ -65,7 +65,7 @@ const PaymentList: React.FC<PaymentListProps> = ({ payments, events }) => {
                     ) : (
                       <span className={getStatusClass(statusMap[payment.id_pagamento] as PaymentStatus || payment.status)}>
                         {statusMap[payment.id_pagamento] || payment.status}
-                      </span>
+                    </span>
                     )}
                   </td>
                 </tr>
