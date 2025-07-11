@@ -1,101 +1,51 @@
-#EVENTBOT 
+# 🎉 **EVENTBOT**
 
-Este projeto é um sistema completo para gerenciamento de eventos, com painel administrativo protegido e mural público para divulgação e compartilhamento de eventos.
+## <span style="font-size:1.7em; font-weight:bold;">Gerencie, Divulgue e Venda Seus Eventos de Forma Inteligente!</span>
 
-## Pré-requisitos
-- Node.js (versão 16 ou superior)
-- npm (geralmente já incluso com o Node.js)
+Bem-vindo ao **EventBot**, a solução completa para quem deseja organizar, divulgar e vender eventos de maneira prática, moderna e segura.
 
-## Instalação e Execução Local
+## 🚀 O que o EventBot faz por você?
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-   cd SEU_REPOSITORIO
-   ```
+- **Mural Público de Eventos:**
+  - Divulgue todos os seus eventos em uma vitrine online, pronta para compartilhamento nas redes sociais.
+  - Botões integrados para WhatsApp, Facebook e Twitter.
 
-2. **Instale as dependências:**
-   ```bash
-   npm install
-   ```
+- **Painel Administrativo Protegido:**
+  - Cadastre, edite e gerencie eventos e pagamentos com total segurança.
+  - Acesso restrito por login, senha e pergunta secreta.
+  - Recuperação de senha fácil e rápida via pergunta secreta (modal pop-up).
+  - Logout seguro a qualquer momento.
 
-3. **Inicie a aplicação:**
-   ```bash
-   npm run dev
-   ```
-   O sistema estará disponível em `http://localhost:5173` (ou porta informada no terminal).
+- **Visual Moderno e Responsivo:**
+  - Interface intuitiva, adaptada para desktop e dispositivos móveis.
+  - Experiência de uso fluida e agradável.
 
-## Como Usar
-
-### Mural Público
-- Acesse `http://localhost:5173/mural` para visualizar todos os eventos cadastrados.
-- Compartilhe eventos facilmente via WhatsApp, Facebook ou Twitter.
-- Não é necessário login para acessar o mural.
-
-### Painel Administrativo
-- Acesse `http://localhost:5173/admin` para cadastrar, editar e gerenciar eventos e pagamentos.
-- **Primeiro acesso:** Cadastre login, senha, pergunta e resposta secreta para o admin.
-- **Acessos seguintes:** Faça login com as credenciais cadastradas.
-- **Recuperação de senha:** Clique em "Esqueci a senha". Um modal (pop-up) será aberto com a pergunta secreta cadastrada. Se a resposta estiver correta, a senha será exibida na tela.
-- **Logout:** Use o botão "Sair" no topo direito do painel admin.
-
-### Observações Importantes
-- **Atenção:** Todas as credenciais e dados de autenticação ficam salvos apenas no navegador (localStorage). Se o localStorage for apagado, será necessário cadastrar novamente.
-- **Segurança:** Este sistema é adequado para testes locais, MVPs ou uso pessoal. Não utilize este método de autenticação em produção real.
-- Os dados dos eventos e pagamentos são mockados e não persistem após atualizar a página.
-
-## Subindo para o GitHub
-
-1. **Inicialize o repositório (se ainda não fez):**
-   ```bash
-   git init
-   ```
-2. **Adicione todos os arquivos:**
-   ```bash
-   git add .
-   ```
-3. **Faça um commit:**
-   ```bash
-   git commit -m "feat: painel admin protegido, mural público, autenticação local e recuperação de senha via pergunta secreta em modal"
-   ```
-4. **Crie o repositório no GitHub e adicione o remoto:**
-   ```bash
-   git remote add origin https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-   ```
-5. **Envie para o GitHub:**
-   ```bash
-   git branch -M main
-   git push -u origin main
-   ```
-
-## Dúvidas ou melhorias?
-Abra uma issue ou entre em contato!
-
-## Demonstração Online
-
-O sistema está disponível para testes em:
-
-- [Mural de Eventos](https://wcnunes.github.io/eventbot/#/mural)
-- [Painel Admin](https://wcnunes.github.io/eventbot/#/admin)
-
-> **Observação:** Para acessar o painel admin, cadastre um login, senha e pergunta secreta no primeiro acesso. A recuperação de senha é feita via pergunta secreta em um modal.
+- **Compartilhamento Instantâneo:**
+  - Seus eventos prontos para viralizar nas redes sociais com apenas um clique.
 
 ---
 
-## Como funciona o deploy
+## 🔗 Teste Agora Mesmo!
 
-O deploy é feito automaticamente para o GitHub Pages usando o comando:
+- 👉 [Mural de Eventos (Público)](https://wcnunes.github.io/eventbot/#/mural)
+- 🔒 [Painel Admin (Acesso Restrito)](https://wcnunes.github.io/eventbot/#/admin)
 
-```bash
-npm run deploy
-```
-
-O site é publicado em:  
-[https://wcnunes.github.io/eventbot/](https://wcnunes.github.io/eventbot/)
+> **Dica:** No primeiro acesso ao painel admin, cadastre seu login, senha e pergunta secreta. Se esquecer a senha, recupere facilmente respondendo à sua pergunta secreta.
 
 ---
 
-## Observações importantes
+## 💡 Por que escolher o EventBot?
 
-- O sistema usa `HashRouter` para garantir que as rotas funcionem no GitHub Pages.
-- O campo `base` do Vite está configurado como `/eventbot/` para compatibilidade com o deploy.
+- **Fácil de usar:** Não precisa de treinamento técnico.
+- **Seguro:** Acesso protegido e recuperação de senha inteligente.
+- **Pronto para vender:** Ideal para produtores de eventos, casas de show, igrejas, escolas, ONGs e muito mais.
+- **Personalizável:** Adapte para sua marca e suas necessidades.
+
+---
+
+## ✨ Solicite uma demonstração personalizada ou adquira já o seu!
+Entre em contato para saber mais, solicitar customizações ou integrar com outros sistemas.
+
+---
+
+© 2024 EventBot – Todos os direitos reservados.
