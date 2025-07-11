@@ -1,4 +1,4 @@
-# EventBot - Gerenciador de Eventos
+#EVENTBOT 
 
 Este projeto é um sistema completo para gerenciamento de eventos, com painel administrativo protegido e mural público para divulgação e compartilhamento de eventos.
 
@@ -70,3 +70,32 @@ Este projeto é um sistema completo para gerenciamento de eventos, com painel ad
 
 ## Dúvidas ou melhorias?
 Abra uma issue ou entre em contato!
+
+## Demonstração Online
+
+O sistema está disponível para testes em:
+
+- [Mural de Eventos](https://wcnunes.github.io/eventbot/#/mural)
+- [Painel Admin](https://wcnunes.github.io/eventbot/#/admin)
+
+> **Observação:** Para acessar o painel admin, cadastre um login, senha e pergunta secreta no primeiro acesso. A recuperação de senha é feita via pergunta secreta em um modal.
+
+---
+
+## Como funciona o deploy
+
+O deploy é feito automaticamente para o GitHub Pages usando o comando:
+
+```bash
+npm run deploy
+```
+
+O site é publicado em:  
+[https://wcnunes.github.io/eventbot/](https://wcnunes.github.io/eventbot/)
+
+---
+
+## Observações importantes
+
+- O sistema usa `HashRouter` para garantir que as rotas funcionem no GitHub Pages.
+- O campo `base` do Vite está configurado como `/eventbot/` para compatibilidade com o deploy.
